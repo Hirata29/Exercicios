@@ -4,13 +4,18 @@
 int main(){
 setlocale(LC_ALL,"portuguese");
 int number;
-printf("Digte um número:");
+printf("Digte um nÃºmero:");
 scanf("%d", &number);
+if(number<0){
+    printf("Insira um nÃºmero positivo");
+    scanf("%d", &number);
+}
+else{}
 if(number%2==0){
-    printf("O número é par");
+    printf("O nÃºmero Ã© par");
 }
 else {
-    printf("O número é ímpar");
+    printf("O nÃºmero Ã© Ã­mpar");
 }
 return 0;
 system("pause");
